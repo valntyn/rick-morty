@@ -34,7 +34,7 @@ export const Navbar = () => {
       <div className="header__right-box">
         <Link to="/home">
           <img
-            src={!isThereUser ? (user.photoURL!) : '../assets/test.png'}
+            src={!isThereUser ? (user.photoURL!) : './assets/test.png'}
             alt="your_profile"
             className="header__img"
           />
