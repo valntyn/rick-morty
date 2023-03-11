@@ -1,4 +1,4 @@
-# E-commerce store
+# Rick and Morty
   In this project, I have created a app where users can browse, search and filter characters from Rick and Morty.
   Also, users can create their own profile on this app using Google account.
   
