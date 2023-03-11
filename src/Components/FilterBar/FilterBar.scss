@@ -1,0 +1,58 @@
+@import "../../utils/mixins";
+
+.filter {
+  width: 100%;
+
+  &__box-input {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    display: flex;
+    gap: 12px;
+    transition: 0.1s linear;
+    margin-bottom: 20px;
+
+    @include onTablet {
+      margin-bottom: 40px;
+    }
+
+    &:hover {
+      border: 1px solid rgba(0, 0, 0, 1);
+    }
+  }
+
+  &__input {
+    color: rgba(0, 0, 0, 0.5);
+    height: 56px;
+    width: 70%;
+    font-size: 14px;
+    outline: none;
+    border: none;
+    transition: 0.1s linear;
+
+    &:hover {
+      font-weight: 600;
+    }
+
+    &:focus {
+      color: #313237;
+      font-weight: 600;
+    }
+  }
+
+  &__input-button {
+    border: none;
+    margin-left: 20px;
+    background-color: inherit;
+  }
+
+  &__input-img {
+    width: 18px;
+    height: 18px;
+    background-image: url(../../assets/search.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}

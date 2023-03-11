@@ -1,0 +1,26 @@
+@import "./utils/reset";
+@import "./utils/mixins";
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+
+  &__container {
+    padding: 0 30px;
+    max-width: 1920px;
+
+    @include onTablet {
+      padding: 0 70px;
+    }
+
+    @include onDesktopSmall {
+      padding: 0 210px;
+    }
+
+    @include onDesktop {
+      padding: 0 280px;
+    }
+  }
+}

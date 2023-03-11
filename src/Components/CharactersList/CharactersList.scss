@@ -1,0 +1,25 @@
+@import "../../utils/mixins";
+
+.list {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 40px 20px;
+  justify-content: space-between;
+  place-items: center;
+  margin-bottom: 40px;
+
+  @include onTablet {
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 80px;
+  }
+
+  @include onDesktopSmall {
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 100px;
+  }
+
+  @include onDesktop {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

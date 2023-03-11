@@ -1,0 +1,43 @@
+@import "../../utils/mixins";
+
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  @include flex-settings;
+
+  &__position {
+    margin-bottom: 40px;
+
+    @include onTablet {
+      margin-bottom: 70px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 42px;
+    border: 1px solid #E2E6E9;
+    transition: 0.1s linear;
+    cursor: pointer;
+    user-select: none;
+
+    &:hover {
+      border: 2px solid #00b0c8;
+    }
+
+    &--active {
+      border: 2px solid #a5fe92;
+      color: #00b0c8;
+    }
+
+    &--disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+      pointer-events: none;
+    }
+  }
+}

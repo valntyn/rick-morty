@@ -1,0 +1,92 @@
+@import "../../utils/mixins";
+
+.homepage {
+  @include flex-settings;
+  flex-direction: column;
+  &__container {
+    padding-top: 35px;
+
+    @include onTablet {
+      padding-top: 60px;
+    }
+
+    @include onDesktopSmall {
+      padding-top: 85px;
+    }
+
+    @include onDesktop {
+      padding-top: 100px;
+    }
+  }
+
+  &__banner-box {
+    @include flex-settings;
+    margin-bottom: 24px;
+
+    @include onTablet {
+      margin-bottom: 32px;
+    }
+
+    @include onDesktopSmall {
+      margin-bottom: 48px;
+    }
+  }
+
+  &__banner {
+    width: 250px;
+    height: 75px;
+    object-fit: contain;
+    object-position: center;
+
+    @include onTablet {
+      width: 400px;
+      height: 133px;
+    }
+
+    @include onDesktopSmall {
+      width: 600px;
+      height: 200px;
+    }
+  }
+
+  &__length {
+    display: flex;
+    justify-content: center;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 42px;
+    border: 1px solid #E2E6E9;
+    transition: 0.1s linear;
+    cursor: pointer;
+    user-select: none;
+    background-color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    width: 70%;
+    @include flex-settings;
+    margin-bottom: 40px;
+
+    @include onTablet {
+      font-size: 24px;
+    }
+
+    @include onDesktopSmall {
+      margin-bottom: 100px;
+    }
+
+    &:hover {
+      border: 2px solid #00b0c8;
+    }
+
+    &--active {
+      border: 2px solid #a5fe92;
+      color: #00b0c8;
+    }
+  }
+}
