@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/rick-morty-test/static/css/main.a86eb2da.chunk.css",
+    "main.css": "/rick-morty-test/static/css/main.7d1eb3dc.chunk.css",
     "main.js": "/rick-morty-test/static/js/main.41abb3fb.chunk.js",
     "main.js.map": "/rick-morty-test/static/js/main.41abb3fb.chunk.js.map",
     "runtime-main.js": "/rick-morty-test/static/js/runtime-main.298c218a.js",
@@ -8,7 +8,7 @@
     "static/js/2.1570bd2d.chunk.js": "/rick-morty-test/static/js/2.1570bd2d.chunk.js",
     "static/js/2.1570bd2d.chunk.js.map": "/rick-morty-test/static/js/2.1570bd2d.chunk.js.map",
     "index.html": "/rick-morty-test/index.html",
-    "static/css/main.a86eb2da.chunk.css.map": "/rick-morty-test/static/css/main.a86eb2da.chunk.css.map",
+    "static/css/main.7d1eb3dc.chunk.css.map": "/rick-morty-test/static/css/main.7d1eb3dc.chunk.css.map",
     "static/js/2.1570bd2d.chunk.js.LICENSE.txt": "/rick-morty-test/static/js/2.1570bd2d.chunk.js.LICENSE.txt",
     "static/media/arrow_back_24px.58acb58c.svg": "/rick-morty-test/static/media/arrow_back_24px.58acb58c.svg",
     "static/media/PageNotFound.scss": "/rick-morty-test/static/media/error.e12b5e1c.svg",
@@ -17,7 +17,7 @@
   "entrypoints": [
     "static/js/runtime-main.298c218a.js",
     "static/js/2.1570bd2d.chunk.js",
-    "static/css/main.a86eb2da.chunk.css",
+    "static/css/main.7d1eb3dc.chunk.css",
     "static/js/main.41abb3fb.chunk.js"
   ]
 }
