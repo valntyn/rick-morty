@@ -1,4 +1,5 @@
 import {
+  useCallback,
   useEffect,
   useState,
 } from 'react';
@@ -9,6 +10,7 @@ import { CharactersList } from '../../Components/CharactersList';
 import { FilterBar } from '../../Components/FilterBar';
 import { Pagination } from '../../Components/Pagination';
 import { Spinner } from '../../Components/Spinner';
+import { debounce } from '../../helpers/debounce';
 import { getFilteredCharacters } from '../../helpers/getFilteredCharaters';
 import { Result } from '../../types/type';
 import './Homepage.scss';
@@ -32,6 +34,11 @@ export const Homepage = () => {
       behavior: 'smooth',
     });
   };
+
+  const applyQuery = useCallback(
+    debounce(setAppliedQuery, 800),
+    [],
+  );
 
   useEffect(() => {
     const fetchCharacters = async () => {
@@ -63,7 +70,7 @@ export const Homepage = () => {
       <main className="homepage homepage__container">
         <Banner />
         <FilterBar
-          setAppliedQuery={setAppliedQuery}
+          applyQuery={applyQuery}
         />
         <div>
           We could not find a result for your search, please try again
@@ -76,7 +83,7 @@ export const Homepage = () => {
     <main className="homepage homepage__container">
       <Banner />
       <FilterBar
-        setAppliedQuery={setAppliedQuery}
+        applyQuery={applyQuery}
       />
       {isLoading ? (
         <Spinner />

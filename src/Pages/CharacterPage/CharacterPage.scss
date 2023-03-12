@@ -80,8 +80,17 @@
   &__title {
     margin-bottom: 48px;
     font-weight: 400;
-    font-size: 48px;
+    font-size: 32px;
     line-height: 56px;
+    text-align: center;
+
+    @include onTablet {
+      font-size: 36px;
+    }
+
+    @include onDesktopSmall {
+      font-size: 48px;
+    }
   }
 
   &__information {
@@ -94,8 +103,16 @@
   }
 
   &__list {
-    width: 400px;
+    width: 70%;
     margin-bottom: 140px;
+
+    @include onTablet {
+      width: 60%;
+    }
+
+    @include onDesktopSmall {
+      width: 50%;
+    }
   }
 
   &__item {
@@ -103,7 +120,9 @@
     border-bottom: 1px solid #8E8E93;
   }
 
-  &__subtitle {}
-
-  &__info {}
+  &__info {
+    letter-spacing: 0.25px;
+    color: #6e798C;
+    line-height: 20px;
+  }
 }

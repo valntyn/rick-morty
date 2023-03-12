@@ -1,21 +1,17 @@
-import { memo, useCallback, useEffect } from 'react';
+import { memo, useCallback } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { getSearchWith } from '../../helpers/searchHelpers';
 import './FilterBar.scss';
 
 type PropTypes = {
-  setAppliedQuery: (apliedQuery: string) => void;
+  applyQuery: (apliedQuery: string) => void;
 };
 
 export const FilterBar: React.FC<PropTypes> = memo(
-  ({ setAppliedQuery }) => {
+  ({ applyQuery }) => {
     const [searchParams, setSearchParams] = useSearchParams();
 
     const query = searchParams.get('query') || '';
-
-    useEffect(() => {
-      setAppliedQuery(query);
-    }, [query]);
 
     const handleOnChange
       = useCallback((event: React.ChangeEvent<HTMLInputElement>) => {
@@ -25,6 +21,8 @@ export const FilterBar: React.FC<PropTypes> = memo(
             page: '1',
           }),
         );
+
+        applyQuery(event.target.value);
       }, [query]);
 
     return (
