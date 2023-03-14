@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/rick-morty/static/css/main.dc7775dd.chunk.css",
-    "main.js": "/rick-morty/static/js/main.bf5472d7.chunk.js",
-    "main.js.map": "/rick-morty/static/js/main.bf5472d7.chunk.js.map",
-    "runtime-main.js": "/rick-morty/static/js/runtime-main.ac6f5db4.js",
-    "runtime-main.js.map": "/rick-morty/static/js/runtime-main.ac6f5db4.js.map",
-    "static/js/2.232e2793.chunk.js": "/rick-morty/static/js/2.232e2793.chunk.js",
-    "static/js/2.232e2793.chunk.js.map": "/rick-morty/static/js/2.232e2793.chunk.js.map",
-    "index.html": "/rick-morty/index.html",
-    "static/css/main.dc7775dd.chunk.css.map": "/rick-morty/static/css/main.dc7775dd.chunk.css.map",
-    "static/js/2.232e2793.chunk.js.LICENSE.txt": "/rick-morty/static/js/2.232e2793.chunk.js.LICENSE.txt",
-    "static/media/arrow_back_24px.58acb58c.svg": "/rick-morty/static/media/arrow_back_24px.58acb58c.svg",
-    "static/media/PageNotFound.scss": "/rick-morty/static/media/error.e12b5e1c.svg",
-    "static/media/FilterBar.scss": "/rick-morty/static/media/search.77cfd6ee.svg"
+    "main.css": "/rick-morty-test/static/css/main.7d1eb3dc.chunk.css",
+    "main.js": "/rick-morty-test/static/js/main.bf5472d7.chunk.js",
+    "main.js.map": "/rick-morty-test/static/js/main.bf5472d7.chunk.js.map",
+    "runtime-main.js": "/rick-morty-test/static/js/runtime-main.298c218a.js",
+    "runtime-main.js.map": "/rick-morty-test/static/js/runtime-main.298c218a.js.map",
+    "static/js/2.1570bd2d.chunk.js": "/rick-morty-test/static/js/2.1570bd2d.chunk.js",
+    "static/js/2.1570bd2d.chunk.js.map": "/rick-morty-test/static/js/2.1570bd2d.chunk.js.map",
+    "index.html": "/rick-morty-test/index.html",
+    "static/css/main.7d1eb3dc.chunk.css.map": "/rick-morty-test/static/css/main.7d1eb3dc.chunk.css.map",
+    "static/js/2.1570bd2d.chunk.js.LICENSE.txt": "/rick-morty-test/static/js/2.1570bd2d.chunk.js.LICENSE.txt",
+    "static/media/arrow_back_24px.58acb58c.svg": "/rick-morty-test/static/media/arrow_back_24px.58acb58c.svg",
+    "static/media/PageNotFound.scss": "/rick-morty-test/static/media/error.e12b5e1c.svg",
+    "static/media/FilterBar.scss": "/rick-morty-test/static/media/search.77cfd6ee.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.ac6f5db4.js",
-    "static/js/2.232e2793.chunk.js",
-    "static/css/main.dc7775dd.chunk.css",
+    "static/js/runtime-main.298c218a.js",
+    "static/js/2.1570bd2d.chunk.js",
+    "static/css/main.7d1eb3dc.chunk.css",
     "static/js/main.bf5472d7.chunk.js"
   ]
 }
